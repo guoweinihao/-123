@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head >
+<meta charset="utf-8">
+<title>标题党</title>
+<style type="text/css">
+div{background: blue; color: red; background-image: url(1.png);}
+
+/*background-image:url(图片名)可以加背景图。*/
+#firstid{
+	color: red; background: white; 
+}
+.firstclass{
+	color: red;line-height: 5;
+}
+a{
+	text-decoration: blink;
+}
+p{
+	background: red;
+}
+p.big{line-height: 200%;
+}
+p.small{line-height: 90%}
+</style>
+<!-- p和div都是选择器，就是写在里面的容器，在上面必须写到style里面，然后可以更改下面p和div里的属性。这个采取就近原则，意思就是如果在下面的div里更改属性，style里的酒不再起作用。 -->
+
+<!-- link是页面外的， -->
+</head>
+<body background="1.png">
+<div id="firstid">洛阳师范学院css第一天
+</div>
+<!-- id选择器只能选择一个单一的， -->
+<div class="firstclass">洛阳师范学院css第二天
+</div>
+<!-- class选择器可以选择一个类别的， -->
+<div class="firstclass">洛阳师范学院css第三天
+</div>
+<div class="firstclass">秋风飘零枝叶残
+</div>
+<a href="http://www.baidu.com">我是a标签</a>
+<p class="big">这个段落拥有更大的行高。 这个段落拥有更大的行高。 这个段落拥有更大的行高。 这个段落拥有更大的行高。 这个段落拥有更大的行高。 这个段落拥有更大的行高。 这个段落拥有更大的行高。</p>
+<p class="small">这个段落拥有更小的行高。 这个段落拥有更小的行高。 这个段落拥有更小的行高。 这个段落拥有更小的行高。 这个段落拥有更小的行高。 这个段落拥有更小的行高。 这个段落拥有更小的行高。</p>
+</body>
+</html>
